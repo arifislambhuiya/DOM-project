@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color</title>
+    <link rel="stylesheet" href="./style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <h3 class="section-title">Display Color</h3>
+          <button class="section-header-action" id="generate-random-color">
+            Random Color
+          </button>
+        </div>
+        <div class="divider"></div>
+        <div class="display-color" id="display-color"></div>
+      </section>
+      <section class="section">
+        <div class="section-header">
+          <h3 class="section-title">Change & Copy Color</h3>
+          <button class="section-header-action" id="copy-to-clipbord">
+            Copy to Clipboard
+          </button>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <div class="select-copy-mode">
+        <p class="lead">Select Copy Mode</p>
+        <div class="mode-radio-group">
+          <div class="mode-input-group">
+            <input
+              type="radio"
+              name="color-mode"
+              id="color-mode-hex"
+              value="hex"
+              checked
+            />
+            <label for="color-mode-hex">Hex</label>
+          </div>
+          <div class="mode-input-group">
+            <input
+              type="radio"
+              name="color-mode"
+              id="color-mode-rgb"
+              value="rgb"
+            />
+            <label for="color-mode-RGB">RGB</label>
+          </div>
+        </div>
+      </div>
+      <div class="selected-color-code">
+        <div class="hex-input-group">
+          <label for="input-hex" class="lead">Hex</label>
+          <input type="text" id="input-hex" class="texy-input hex-input" />
+          <div class="hex-incon"></div>
+        </div>
+        <div class="rgb-input-group">
+          <label for="input-rgb" class="lead">Hex</label>
+          <input type="text" id="input-rgb" class="texy-input" disabled />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
